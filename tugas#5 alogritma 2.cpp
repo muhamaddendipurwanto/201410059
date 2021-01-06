@@ -10,7 +10,12 @@ int main ()
 	cin>>m;
 	cout<< "masukan detik : ";
 	cin>>d;
-	td=(j*3600)+(m*60)+d;
-	cout<<"tital detik : "<<td;
+		cout<<"Masukan Total Detik : ";
+	cin>>td;
+	j=td/3600;
+	sm=td%3600;
+	m=sm/60;
+	d=sm%60;
+	cout<<"Hasilnya = "<<j<<":"<<m<<":"<<d;
 	return 0;
 }
